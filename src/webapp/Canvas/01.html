@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Make canvas</title>
+<style>
+ *{
+ padding :0; 
+ margin :0;
+ }
+canvas {background : #eee; 
+		display : block;
+		margin:0 auto;}
+</style>
+
+</head>
+<body>
+<!-- canvas -->
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+	
+	ctx.beginPath();  <!--ctx 캔버스에 그림을 그려줌-->
+	ctx.rect(20,40,50,50);
+	ctx.fillStyle = "#FD65E9";
+	ctx.fill();
+	ctx.closePath();
+	
+	
+	ctx.beginPath(); 
+	ctx.arc(240,160,20,0 ,Math.PI*2, false); /* false로 원형이 닫히지 않은 원을 만들 수 있다 */
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+	
+	ctx.beginPath(); 
+	ctx.rect(160,10,100,30); 
+	ctx.fillStyle = "rgba(0,0,255,0.5)";/* 0.5=>투명도 설정 */ 
+	ctx.fill();
+	ctx.closePath();
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist>
+	<book>
+		<name>홍길동</name>
+		<author>허균</author>
+		<price>15000</price>
+	</book>
+	
+	<book>
+		<name>코랩으로 chatGPT 따라하기</name>
+		<author>작자미상</author>
+		<price>21000</price>
+	</book>
+</booklist>
